@@ -1,7 +1,5 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
-import Header from "../components/header";
-import HeaderOne from "../wrappers/header/HeaderOne";
 
 import Footer from "../components/footer";
 import Provider from "../context/provider";
@@ -23,8 +21,6 @@ const Layout = ({ children }) => {
         `}
         render={data => (
           <>
-            <Header />
-            <HeaderOne />
             {children}
             <Footer />
           </>
