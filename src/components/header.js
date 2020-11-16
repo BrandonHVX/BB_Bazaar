@@ -40,31 +40,12 @@ const Header = ({ siteTitle }) => {
 
   return (
     <>
-      <nav
+      <div
         className="navbar"
         role="navigation"
         aria-label="main navigation"
         style={{ display: "flex" }}
       >
-        <div
-          className="navbar-start"
-          style={{
-            marginLeft: "30px",
-            width: "100%",
-            alignItems: "center",
-            display: "flex"
-          }}
-        >
-          <h1 className="subtitle">
-            <Link
-              aria-label="search"
-              className="has-text-black has-text-weight-bold"
-              to="/"
-            >
-              {siteTitle}
-            </Link>
-          </h1>
-        </div>
         <div
           className="navbar-end"
           style={{ marginRight: "30px", display: "flex" }}
@@ -103,7 +84,7 @@ const Header = ({ siteTitle }) => {
             </Link>
           </div>
         </div>
-      </nav>
+      </div>
       <div className={` ${modal === true ? "modal is-active" : "modal"}`}>
         <div className="modal-background" onClick={closeSearchBar}></div>
         <div className="modal-content">

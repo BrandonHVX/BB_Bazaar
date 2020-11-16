@@ -31,23 +31,20 @@ class HeroSliderTwo extends Component {
     let data = [
       {
         bgImg: "image2.jpg",
-        sliderTitle: "Film & Video",
-        sliderSubtitle:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore et dolore.",
+        sliderTitle: "",
+        sliderSubtitle: "",
         btnLink: "contact-us"
       },
       {
         bgImg: "image4.jpg",
-        sliderTitle: "Photography",
-        sliderSubtitle:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore et dolore.",
+        sliderTitle: "",
+        sliderSubtitle: "",
         btnLink: "contact-us"
       },
       {
         bgImg: "image3.jpg",
-        sliderTitle: "Hydra Life",
-        sliderSubtitle:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore et dolore.",
+        sliderTitle: "",
+        sliderSubtitle: "",
         btnLink: "contact-us"
       }
     ];
@@ -57,7 +54,9 @@ class HeroSliderTwo extends Component {
         <div className="swiper-slide" key={i}>
           <div
             className="hero-slider__single-item"
-            style={{ backgroundImage: `url(assets/img/slider/${val.bgImg})` }}
+            style={{
+              backgroundImage: `url(/assets/img/slider/${val.bgImg})`
+            }}
           >
             <div className="hero-slider__content-wrapper">
               <div className="container">

@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby";
 
 import Footer from "../components/footer";
 import Provider from "../context/provider";
-import "./layout.scss";
+import NavBar from "../components/castro/NavBar";
 import "./index.scss";
 
 const Layout = ({ children }) => {
@@ -21,6 +21,7 @@ const Layout = ({ children }) => {
         `}
         render={data => (
           <>
+            <NavBar />
             {children}
             <Footer />
           </>

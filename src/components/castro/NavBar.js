@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
 import MobileMenu from "./MobileMenu";
+import Header from "../../components/header";
 import BBLogo from "../../images/primarylogo.png";
 
 class NavBar extends Component {
@@ -50,57 +51,7 @@ class NavBar extends Component {
         >
           <div className="header-area__desktop header-area__desktop--default">
             {/*=======  header top bar  =======*/}
-            <div className="header-top-bar">
-              <div className="container">
-                <div className="row align-items-center">
-                  <div className="col-lg-4">
-                    {/* top bar left */}
-                    <div className="top-bar-left-wrapper">
-                      <div className="social-links social-links--white-topbar d-inline-block">
-                        <ul>
-                          <li>
-                            <a href="//facebook.com">
-                              <i className="zmdi zmdi-facebook" />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="//twitter.com">
-                              <i className="zmdi zmdi-twitter" />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="//vimeo.com">
-                              <i className="zmdi zmdi-vimeo" />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="//linkedin.com">
-                              <i className="zmdi zmdi-linkedin-box" />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="//skype.com">
-                              <i className="zmdi zmdi-skype" />
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-8">
-                    {/* top bar right */}
-                    <div className="top-bar-right-wrapper">
-                      <a
-                        href="//facebook.com"
-                        className="ht-btn ht-btn--default d-inline-block"
-                      >
-                        GET A QUOTE
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div className="header-top-bar"></div>
             {/*=======  End of header top bar  =======*/}
             {/*=======  header info area  =======*/}
             <div className="header-info-area">
@@ -116,32 +67,7 @@ class NavBar extends Component {
                       </div>
                       {/* header contact info */}
                       <div className="header-contact-info">
-                        <div className="header-info-single-item">
-                          <div className="header-info-single-item__icon">
-                            <i className="zmdi zmdi-smartphone-android" />
-                          </div>
-                          <div className="header-info-single-item__content">
-                            <h6 className="header-info-single-item__title">
-                              Phone
-                            </h6>
-                            <p className="header-info-single-item__subtitle">
-                              1(888) 470-3022
-                            </p>
-                          </div>
-                        </div>
-                        <div className="header-info-single-item">
-                          <div className="header-info-single-item__icon">
-                            <i className="zmdi zmdi-email" />
-                          </div>
-                          <div className="header-info-single-item__content">
-                            <h6 className="header-info-single-item__title">
-                              E-mail
-                            </h6>
-                            <p className="header-info-single-item__subtitle">
-                              papafansnetworking@gmail.com
-                            </p>
-                          </div>
-                        </div>
+                        <Header />
                       </div>
                       {/* mobile menu */}
                       <div
@@ -167,31 +93,46 @@ class NavBar extends Component {
                       <div className="header-navigation__nav position-static">
                         <nav>
                           <ul>
-                            <li className="has-children has-children--multilevel-submenu">
+                            <li>
                               <Link to={`${process.env.PUBLIC_URL}/`}>
                                 {" "}
-                                HOME{" "}
+                                BRAND NEW{" "}
                               </Link>
                             </li>
                             <li>
                               <Link to={`${process.env.PUBLIC_URL}/`}>
-                                ABOUT
+                                BACK IN STOCK
                               </Link>
                             </li>
-                            <li className="has-children has-children--multilevel-submenu">
+                            <li>
                               <Link to={`${process.env.PUBLIC_URL}/`}>
-                                SERVICE
+                                BOSSY
                               </Link>
                             </li>
-                            <li className="has-children has-children--multilevel-submenu">
+                            <li>
                               <Link to={`${process.env.PUBLIC_URL}/`}>
-                                PROJECT
+                                BABE
                               </Link>
                             </li>
 
                             <li>
                               <Link to={`${process.env.PUBLIC_URL}/`}>
-                                CONTACT
+                                BATHE
+                              </Link>{" "}
+                            </li>
+                            <li>
+                              <Link to={`${process.env.PUBLIC_URL}/`}>
+                                BODY
+                              </Link>{" "}
+                            </li>
+                            <li>
+                              <Link to={`${process.env.PUBLIC_URL}/`}>
+                                BASICS
+                              </Link>{" "}
+                            </li>
+                            <li>
+                              <Link to={`${process.env.PUBLIC_URL}/`}>
+                                SALE
                               </Link>{" "}
                             </li>
                           </ul>
