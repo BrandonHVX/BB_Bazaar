@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Swiper from "react-id-swiper";
+import SlideOne from "../../images/bg-image.jpg";
 
 class HeroSliderTwo extends Component {
   render() {
@@ -55,7 +56,7 @@ class HeroSliderTwo extends Component {
           <div
             className="hero-slider__single-item"
             style={{
-              backgroundImage: `url(/assets/img/slider/${val.bgImg})`
+              backgroundImage: `url(${SlideOne})`
             }}
           >
             <div className="hero-slider__content-wrapper">

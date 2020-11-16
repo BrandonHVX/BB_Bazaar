@@ -2,6 +2,10 @@ import PropTypes from "prop-types";
 import React from "react";
 import featureIconData from "../data/feature-icons/feature-icon.json";
 import FeatureIconSingle from "./FeatureIconSingle";
+import SupportOne from "../images/support-1.png";
+import SupportTwo from "../images/support-2.png";
+import SupportThree from "../images/support-3.png";
+import SupportFour from "../images/support-3.png";
 
 const FeatureIcon = ({ spaceTopClass, spaceBottomClass }) => {
   return (
@@ -11,11 +15,7 @@ const FeatureIcon = ({ spaceTopClass, spaceBottomClass }) => {
           <div class="col-lg-3 col-sm-6">
             <div class="support-wrap mb-30">
               <div class="support-icon">
-                <img
-                  class="animated"
-                  src="/assets/img/icon-img/support-1.png"
-                  alt=""
-                />
+                <img class="animated" src={SupportOne} alt="" />
               </div>
               <div class="support-content">
                 <h5>Free Shipping</h5>
@@ -26,11 +26,7 @@ const FeatureIcon = ({ spaceTopClass, spaceBottomClass }) => {
           <div class="col-lg-3 col-sm-6">
             <div class="support-wrap mb-30">
               <div class="support-icon">
-                <img
-                  class="animated"
-                  src="/assets/img/icon-img/support-2.png"
-                  alt=""
-                />
+                <img class="animated" src={SupportTwo} alt="" />
               </div>
               <div class="support-content">
                 <h5>Support 24/7</h5>
@@ -41,11 +37,7 @@ const FeatureIcon = ({ spaceTopClass, spaceBottomClass }) => {
           <div class="col-lg-3 col-sm-6">
             <div class="support-wrap mb-30">
               <div class="support-icon">
-                <img
-                  class="animated"
-                  src="/assets/img/icon-img/support-3.png"
-                  alt=""
-                />
+                <img class="animated" src={SupportThree} alt="" />
               </div>
               <div class="support-content">
                 <h5>Money Return</h5>
@@ -56,11 +48,7 @@ const FeatureIcon = ({ spaceTopClass, spaceBottomClass }) => {
           <div class="col-lg-3 col-sm-6">
             <div class="support-wrap mb-30">
               <div class="support-icon">
-                <img
-                  class="animated"
-                  src="/assets/img/icon-img/support-4.png"
-                  alt=""
-                />
+                <img class="animated" src={SupportFour} alt="" />
               </div>
               <div class="support-content">
                 <h5>Order Discount</h5>
