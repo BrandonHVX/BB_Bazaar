@@ -25,7 +25,7 @@ export const query = graphql`
         }
       }
     }
-    allShopifyProduct(filter: { productType: { eq: "Bossy" } }) {
+    allShopifyProduct(filter: { productType: { eq: "Body" } }) {
       edges {
         node {
           id

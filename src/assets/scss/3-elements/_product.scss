@@ -246,6 +246,7 @@
 .product-list-image-wrap {
   position: relative;
   .product-img {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
     position: relative;
 
     overflow: hidden;
@@ -345,6 +346,9 @@
         border-left: 1px solid rgba(255, 255, 255, 0.2);
       }
       .pro-same-action {
+        a {
+          color: white;
+        }
         button {
           font-size: 16px;
           line-height: 48px;
@@ -368,6 +372,7 @@
         &.pro-wishlist,
         &.pro-quickview {
           a {
+            color: white;
             margin-top: 2px;
           }
         }
@@ -1939,6 +1944,9 @@
       .product-action-3 {
         .pro-same-action {
           display: inline-block;
+          a {
+            color: white;
+          }
         }
         a,
         button {

@@ -61,7 +61,7 @@ class NavBar extends Component {
                     <div className="header-info-wrapper align-items-center">
                       {/* logo */}
                       <div className="logo">
-                        <Link to={`${process.env.PUBLIC_URL}/`}>
+                        <Link to="/">
                           <img src={BBLogo} className="img-fluid" alt="Logo" />
                         </Link>
                       </div>
@@ -94,46 +94,29 @@ class NavBar extends Component {
                         <nav>
                           <ul>
                             <li>
-                              <Link to={`${process.env.PUBLIC_URL}/`}>
-                                {" "}
-                                BRAND NEW{" "}
-                              </Link>
+                              <Link to="/brand-new"> BRAND NEW </Link>
                             </li>
                             <li>
-                              <Link to={`${process.env.PUBLIC_URL}/`}>
-                                BACK IN STOCK
-                              </Link>
+                              <Link to="/back-in-stock">BACK IN STOCK</Link>
                             </li>
                             <li>
-                              <Link to={`${process.env.PUBLIC_URL}/`}>
-                                BOSSY
-                              </Link>
+                              <Link to="/bossy">BOSSY</Link>
                             </li>
                             <li>
-                              <Link to={`${process.env.PUBLIC_URL}/`}>
-                                BABE
-                              </Link>
+                              <Link to="/babe">BABE</Link>
                             </li>
 
                             <li>
-                              <Link to={`${process.env.PUBLIC_URL}/`}>
-                                BATHE
-                              </Link>{" "}
+                              <Link to="/bathe">BATHE</Link>{" "}
                             </li>
                             <li>
-                              <Link to={`${process.env.PUBLIC_URL}/`}>
-                                BODY
-                              </Link>{" "}
+                              <Link to="/body">BODY</Link>{" "}
                             </li>
                             <li>
-                              <Link to={`${process.env.PUBLIC_URL}/`}>
-                                BASICS
-                              </Link>{" "}
+                              <Link to="/basics">BASICS</Link>{" "}
                             </li>
                             <li>
-                              <Link to={`${process.env.PUBLIC_URL}/`}>
-                                SALE
-                              </Link>{" "}
+                              <Link to="/sale">SALE</Link>{" "}
                             </li>
                           </ul>
                         </nav>

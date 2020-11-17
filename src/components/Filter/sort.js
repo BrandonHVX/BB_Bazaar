@@ -1,37 +1,41 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-const Sort = ({context}) => {
-  const [sort, setSort] = useState(context.filteredSort)
-  const sorts = []
-
+const Sort = ({ context }) => {
+  const [sort, setSort] = useState(context.filteredSort);
+  const sorts = [];
 
   sorts.push(
     <>
       <option key={0} value="featured">
         Featured
-        </option>
+      </option>
       <option key={1} value="A-Z">
         Alphabetically, A-Z
-        </option>
+      </option>
       <option key={2} value="Z-A">
         Alphabetically, Z-A
-        </option>
+      </option>
       <option key={3} value="low">
         Price, low to high
-        </option>
+      </option>
       <option key={4} value="high">
         Price, high to low
-        </option>
+      </option>
     </>
-  )
+  );
 
-  const handleFilterSort = (value) =>{
-    setSort(value)
-    context.updateFilterSort(value)
-  }
-  
+  const handleFilterSort = value => {
+    setSort(value);
+    context.updateFilterSort(value);
+  };
+
   return (
-    <label htmlFor="sortBy" className="has-text-weight-semibold is-uppercase" style={{ margin: "-20px" }}>SORT BY :
+    <label
+      htmlFor="sortBy"
+      className="has-text-weight-semibold is-uppercase"
+      style={{ margin: "-20px" }}
+    >
+      SORT BY :
       <div className="field">
         <div className="control">
           <div className="select">
