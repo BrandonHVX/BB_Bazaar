@@ -52,14 +52,14 @@ class MobileMenu extends Component {
           } `}
           id="mobile-menu-overlay"
         >
-          <a
-            href="#/"
+          <button
             className="offcanvas-menu-close"
             id="mobile-menu-close-trigger"
             onClick={this.toggleMobileMenu}
           >
-            <i class="fas fa-times" />
-          </a>
+            <i className="pe-7s-close">x</i>
+          </button>
+
           <div className="offcanvas-wrapper">
             <div className="offcanvas-inner-content">
               <div className="offcanvas-mobile-search-area">
@@ -72,23 +72,29 @@ class MobileMenu extends Component {
               </div>
               <nav className="offcanvas-navigation" id="offcanvas-navigation">
                 <ul>
-                  <li className="menu-item-has-children">
-                    <Link to={`${process.env.PUBLIC_URL}/`}>HOME</Link>
+                  <li>
+                    <Link to="/">HOME</Link>
                   </li>
                   <li>
-                    <Link to={`${process.env.PUBLIC_URL}/`}>ABOUT</Link>
-                  </li>
-                  <li className="menu-item-has-children">
-                    <Link to={`${process.env.PUBLIC_URL}/`}>SERVICE</Link>
-                  </li>
-                  <li className="menu-item-has-children">
-                    <Link to={`${process.env.PUBLIC_URL}/`}>PROJECT</Link>
-                  </li>
-                  <li className="menu-item-has-children">
-                    <Link to={`${process.env.PUBLIC_URL}/`}>BLOG</Link>
+                    <Link to="/brand-new">BRAND NEW</Link>
                   </li>
                   <li>
-                    <Link to={`${process.env.PUBLIC_URL}/`}>CONTACT</Link>{" "}
+                    <Link to="/back-in-stock">BACK IN STOCK</Link>
+                  </li>
+                  <li>
+                    <Link to="/bossy">BOSSY</Link>
+                  </li>
+                  <li>
+                    <Link to="/babe">BABE</Link>
+                  </li>
+                  <li>
+                    <Link to="/bathe">BATHE</Link>
+                  </li>
+                  <li>
+                    <Link to="/body">BODY</Link>
+                  </li>
+                  <li>
+                    <Link to="/sale">SALE</Link>{" "}
                   </li>
                 </ul>
               </nav>
@@ -97,13 +103,9 @@ class MobileMenu extends Component {
                   <div className="header-contact-info">
                     <ul className="header-contact-info__list">
                       <li>
-                        <i className="ion-android-phone-portrait" />{" "}
-                        <a href="tel://12452456012">(1245) 2456 012 </a>
-                      </li>
-                      <li>
                         <i className="ion-android-mail" />{" "}
                         <a href="mailto:info@yourdomain.com">
-                          info@yourdomain.com
+                          bibisbazaar@gmail.com
                         </a>
                       </li>
                     </ul>

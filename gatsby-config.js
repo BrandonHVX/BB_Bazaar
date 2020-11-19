@@ -1,12 +1,12 @@
-require('dotenv').config({
+require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`
-})
+});
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby x Shopify`,
-    description: `Simple theme to build a blazing simple and fast store with Gatsby and Shopify.`,
-    author: `@alexislepresle`,
+    title: `Bibi's Bazaar`,
+    description: `Fashion Boutique`,
+    author: `@b.lovera`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -16,15 +16,15 @@ module.exports = {
       resolve: `gatsby-plugin-apollo-shopify`,
       options: {
         shopName: process.env.SHOP_NAME,
-        accessToken: process.env.SHOPIFY_ACCESS_TOKEN,
-      },
+        accessToken: process.env.SHOPIFY_ACCESS_TOKEN
+      }
     },
     {
-      resolve: 'gatsby-plugin-purgecss',
+      resolve: "gatsby-plugin-purgecss",
       options: {
         develop: true,
-        purgeOnly: ['/all.sass'],
-      },
+        purgeOnly: ["/all.sass"]
+      }
     },
     {
       resolve: "gatsby-source-shopify",
@@ -40,14 +40,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-146773242-1",
-      },
+        trackingId: "UA-146773242-1"
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -60,8 +60,8 @@ module.exports = {
         background_color: `#333`,
         theme_color: `#333`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
-      },
-    },
-  ],
-}
+        icon: `src/images/gatsby-icon.png`
+      }
+    }
+  ]
+};

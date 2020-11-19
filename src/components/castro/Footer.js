@@ -65,7 +65,6 @@ class Footer extends Component {
                     <div className="col-xl-2 offset-xl-1 col-lg-3 col-md-4">
                       {/* footer widget */}
                       <div className="footer-widget">
-                        <h4 className="footer-widget__title">USEFUL LINKS</h4>
                         <ul className="footer-widget__navigation">
                           <li>
                             <Link to="/">Home</Link>
@@ -86,7 +85,6 @@ class Footer extends Component {
                     <div className="col-xl-2 offset-xl-1 col-lg-3 col-md-4">
                       {/* footer widget */}
                       <div className="footer-widget">
-                        <h4 className="footer-widget__title">USEFUL LINKS</h4>
                         <ul className="footer-widget__navigation">
                           <li>
                             <Link to="/body">Body</Link>

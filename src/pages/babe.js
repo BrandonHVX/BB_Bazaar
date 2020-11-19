@@ -9,7 +9,6 @@ const IndexPage = ({ data }) => {
     <>
       <SEO title="Home" />
       <ProductList data={data} />
-      <ProjectIdea img={data.projectIdea.childImageSharp.fluid} />
     </>
   );
 };
