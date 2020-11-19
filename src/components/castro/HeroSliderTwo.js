@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Swiper from "react-id-swiper";
-import SlideOne from "../../images/bg-image.jpg";
+import SlideOne from "../../images/bb-banner.jpg";
 
 class HeroSliderTwo extends Component {
   render() {

@@ -1,9 +1,9 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 
-import Footer from "../components/footer";
 import Provider from "../context/provider";
 import NavBar from "../components/castro/NavBar";
+import Footer from "../components/castro/Footer";
 import "./index.scss";
 
 const Layout = ({ children }) => {

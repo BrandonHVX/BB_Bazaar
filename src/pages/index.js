@@ -9,7 +9,7 @@ import SEO from "../components/seo";
 import { graphql } from "gatsby";
 import ProductList from "../components/productList";
 import ProjectIdea from "../components/projectIdea";
-import Footer from "../components/castro/Footer";
+
 import MobileMenu from "../components/castro/MobileMenu";
 import FeatureIcon from "../components/FeatureIcon";
 
@@ -22,7 +22,7 @@ const HomeTwo = ({ data }) => {
       <HeroSliderTwo />
 
       {/* Video CTA */}
-      <FeatureIcon spaceTopClass="pt-100" spaceBottomClass="pb-60" />
+      <FeatureIcon />
       <ProductList data={data} />
 
       {/* Service Tab */}

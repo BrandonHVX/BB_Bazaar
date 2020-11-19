@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { animateScroll as scroll } from "react-scroll";
+import BBlogowhite from "../../images/primarylogo_white.png";
+import { Link } from "gatsby";
+
 class Footer extends Component {
   constructor(props) {
     super(props);
@@ -41,26 +44,21 @@ class Footer extends Component {
         {/*====================  footer area ====================*/}
         <div className="footer-area dark-bg">
           <div className="container">
-            <div className="row">
+            <div className="row ">
               <div className="col-lg-12">
                 <div className="footer-content-wrapper section-space--inner--100">
-                  <div className="row">
+                  <div className="row ">
                     <div className="col-xl-3 col-lg-3 col-md-12">
                       {/* footer intro wrapper */}
                       <div className="footer-intro-wrapper">
                         <div className="footer-logo">
                           <a href={`${process.env.PUBLIC_URL}/home-one`}>
                             <img
-                              src="assets/img/logo/papas-logo.png"
+                              src={BBlogowhite}
                               className="img-fluid"
                               alt=""
                             />
                           </a>
-                        </div>
-                        <div className="footer-desc">
-                          Lorem ipsum dolor sit amet consect adipisici elit, sed
-                          do eiusmod tempor incididuk ut labore et dolore magna
-                          aliqua Ut enim
                         </div>
                       </div>
                     </div>
@@ -70,23 +68,17 @@ class Footer extends Component {
                         <h4 className="footer-widget__title">USEFUL LINKS</h4>
                         <ul className="footer-widget__navigation">
                           <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>Home</a>
+                            <Link to="/">Home</Link>
+                          </li>
+
+                          <li>
+                            <Link to="/bossy">Bossy</Link>
                           </li>
                           <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>
-                              Company News
-                            </a>
+                            <Link to="/babe">Babe</Link>
                           </li>
                           <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>Projects</a>
-                          </li>
-                          <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>Careers</a>
-                          </li>
-                          <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>
-                              Contact Us
-                            </a>
+                            <Link to="/bathe">Bathe</Link>
                           </li>
                         </ul>
                       </div>
@@ -97,25 +89,16 @@ class Footer extends Component {
                         <h4 className="footer-widget__title">USEFUL LINKS</h4>
                         <ul className="footer-widget__navigation">
                           <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>
-                              Our Services
-                            </a>
+                            <Link to="/body">Body</Link>
                           </li>
                           <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>Showcase</a>
+                            <Link to="/basics">Basics</Link>
                           </li>
                           <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>Affliates</a>
+                            <Link to="/brand-new">Brand New</Link>
                           </li>
                           <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>
-                              Disclaimer
-                            </a>
-                          </li>
-                          <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>
-                              Privacy Policy
-                            </a>
+                            <Link to="/back-in-stock">Back In Stock</Link>
                           </li>
                         </ul>
                       </div>
@@ -125,18 +108,10 @@ class Footer extends Component {
                       <div className="footer-widget mb-0">
                         <h4 className="footer-widget__title">CONTACT US</h4>
                         <div className="footer-widget__content">
-                          <p className="address">
-                            Your address goes here, street Crossroad123.
-                          </p>
+                          <p className="address"></p>
                           <ul className="contact-details">
                             <li>
-                              <span>P:</span>99 55 66 88 526
-                            </li>
-                            <li>
-                              <span>F:</span>55 44 77 62
-                            </li>
-                            <li>
-                              <span>E:</span>cons@email.com
+                              <span></span>bibisbazaar@email.com
                             </li>
                           </ul>
                         </div>
@@ -149,7 +124,7 @@ class Footer extends Component {
           </div>
           <div className="footer-copyright-wrapper">
             <div className="footer-copyright text-center">
-              Copyright © 2019. All right reserved
+              Copyright © 2020. All right reserved
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@ import SupportFour from "../images/support-3.png";
 
 const FeatureIcon = ({ spaceTopClass, spaceBottomClass }) => {
   return (
-    <div class="support-area pt-100 pb-60">
+    <div class="support-area mt-5">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-3 col-sm-6">
