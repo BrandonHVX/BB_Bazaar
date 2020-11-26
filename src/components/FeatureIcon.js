@@ -19,7 +19,7 @@ const FeatureIcon = ({ spaceTopClass, spaceBottomClass }) => {
               </div>
               <div class="support-content">
                 <h5>Free Shipping</h5>
-                <p>Free shipping on all order</p>
+                <p>Orders Over $75</p>
               </div>
             </div>
           </div>
@@ -30,7 +30,7 @@ const FeatureIcon = ({ spaceTopClass, spaceBottomClass }) => {
               </div>
               <div class="support-content">
                 <h5>Support 24/7</h5>
-                <p>Free shipping on all order</p>
+                <p>Quality Customer Service </p>
               </div>
             </div>
           </div>
@@ -40,8 +40,8 @@ const FeatureIcon = ({ spaceTopClass, spaceBottomClass }) => {
                 <img class="animated" src={SupportThree} alt="" />
               </div>
               <div class="support-content">
-                <h5>Money Return</h5>
-                <p>Free shipping on all order</p>
+                <h5>No Returns</h5>
+                <p>No Refunds or Refunds</p>
               </div>
             </div>
           </div>
@@ -51,8 +51,8 @@ const FeatureIcon = ({ spaceTopClass, spaceBottomClass }) => {
                 <img class="animated" src={SupportFour} alt="" />
               </div>
               <div class="support-content">
-                <h5>Order Discount</h5>
-                <p>Free shipping on all order</p>
+                <h5>Products Discount</h5>
+                <p>On Selected Items</p>
               </div>
             </div>
           </div>
