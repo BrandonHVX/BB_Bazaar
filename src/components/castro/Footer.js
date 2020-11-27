@@ -109,7 +109,7 @@ class Footer extends Component {
                           <p className="address"></p>
                           <ul className="contact-details">
                             <li>
-                              <span></span>bibisbazaar@email.com
+                              <span></span>shopbibisbazaar@gmail.com
                             </li>
                           </ul>
                         </div>
