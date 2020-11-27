@@ -40,8 +40,8 @@ const FeatureIcon = ({ spaceTopClass, spaceBottomClass }) => {
                 <img class="animated" src={SupportThree} alt="" />
               </div>
               <div class="support-content">
-                <h5>No Returns</h5>
-                <p>No Refunds or Refunds</p>
+                <h5>Refunds & Exchanges</h5>
+                <p>No Refunds or Exchanges</p>
               </div>
             </div>
           </div>

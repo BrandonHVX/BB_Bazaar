@@ -76,7 +76,11 @@ class NavBar extends Component {
                         <Header />
                       </div>
                       {/* mobile menu */}
-                      <MobileHeader />
+                      <div className="mobile-navigation-header">
+                        {" "}
+                        <MobileHeader />
+                      </div>
+
                       <div
                         className="mobile-navigation-icon"
                         id="mobile-menu-trigger"

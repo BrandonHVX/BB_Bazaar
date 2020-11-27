@@ -190,6 +190,21 @@
           }
         }
       }
+      .mobile-navigation-header {
+        display: none;
+        @media #{ $tablet-device, $large-mobile} {
+          display: block;
+        }
+        i {
+          background-color: $theme-color--black;
+          &:before {
+            background-color: $theme-color--black;
+          }
+          &:after {
+            background-color: $theme-color--black;
+          }
+        }
+      }
 
       .header-info-single-item {
         margin-right: 60px;
@@ -884,6 +899,8 @@
   .mobile-navigation-icon {
     margin-left: 15px;
   }
+  .mobile-navigation-header {
+  }
 }
 
 .mobile-navigation-icon {
@@ -892,6 +909,70 @@
   position: relative;
   cursor: pointer;
   float: right;
+
+  &:hover {
+    i {
+      background-color: $theme-color--black;
+      &:before {
+        width: 80%;
+        background-color: $theme-color--black;
+      }
+      &:after {
+        background-color: $theme-color--black;
+        width: 60%;
+      }
+    }
+  }
+
+  i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: rgba(34, 34, 34, 0.4);
+    transition: $transition--cubic;
+
+    &:before {
+      position: absolute;
+      bottom: 8px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: rgba(34, 34, 34, 0.4);
+      content: "";
+      transition: $transition--cubic;
+    }
+
+    &:after {
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: rgba(34, 34, 34, 0.4);
+      content: "";
+      transition: $transition--cubic;
+    }
+  }
+
+  &--mobile-off {
+    @media #{$desktop-device, $tablet-device, $large-mobile} {
+      display: none;
+    }
+  }
+
+  &--desktop-off {
+    display: none;
+    @media #{$desktop-device, $tablet-device, $large-mobile} {
+      display: block;
+    }
+  }
+}
+.mobile-navigation-header {
+  position: relative;
+  cursor: pointer;
+  float: left;
 
   &:hover {
     i {
