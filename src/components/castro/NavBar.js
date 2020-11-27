@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "gatsby";
 import MobileMenu from "./MobileMenu";
 import Header from "../../components/header";
+import MobileHeader from "../../components/MobileHeader";
 import BBLogo from "../../images/primarylogo.png";
 
 class NavBar extends Component {
@@ -62,7 +63,12 @@ class NavBar extends Component {
                       {/* logo */}
                       <div className="logo">
                         <Link to="/">
-                          <img src={BBLogo} className="img-fluid" alt="Logo" />
+                          <img
+                            src={BBLogo}
+                            className="img-fluid"
+                            width={120}
+                            alt="Logo"
+                          />
                         </Link>
                       </div>
                       {/* header contact info */}
@@ -70,6 +76,7 @@ class NavBar extends Component {
                         <Header />
                       </div>
                       {/* mobile menu */}
+                      <MobileHeader />
                       <div
                         className="mobile-navigation-icon"
                         id="mobile-menu-trigger"
@@ -132,6 +139,7 @@ class NavBar extends Component {
         {/*====================  End of header area  ====================*/}
 
         {/* Mobile Menu */}
+
         <MobileMenu ref={this.mobileMenuElement} />
       </div>
     );
