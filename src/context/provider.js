@@ -6,6 +6,13 @@ const isBrowser = typeof window !== "undefined";
 const Provider = ({ children }) => {
   const [store, updateStore] = useState(defaultStoreContext);
   let isRemoved = false;
+  const getlocalStorage = value => {
+    try {
+      return JSON.parse(localStorage.getItem(value));
+    } catch (e) {
+      return "";
+    }
+  };
   useEffect(() => {
     const initializeCheckout = async () => {
       // Check if card exits already
@@ -59,7 +66,7 @@ const Provider = ({ children }) => {
     <StoreContext.Provider
       value={{
         store,
-
+        customerAccessToken: getlocalStorage("customerAccessToken"),
         addVariantToCart: (variantId, quantity) => {
           if (variantId === "" || !quantity) {
             console.error("Both a size and quantity are required.");
